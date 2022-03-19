@@ -9,16 +9,4 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="popular">Popular</string>
     <string name="terbaru">Terbaru</string>
-
-    <string-array name="data_name">
-        <item>Ahmad Dahlan</item>
-        <item>Ahmad Yani</item>
-        <item>Sutomo</item>
-    </string-array>
-
-    <integer-array name="data_photo">
-        <item>@drawable/jogja_one</item>
-        <item>@drawable/jogja_two</item>
-        <item>@drawable/jogja_three</item>
-    </integer-array>
 </resources>
