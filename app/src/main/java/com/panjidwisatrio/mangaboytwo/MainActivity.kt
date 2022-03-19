@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.navbar.itemIconTintList = null
-
         currentPage(HomeFragment)
+        supportActionBar?.hide()
 
         binding.navbar.setOnItemSelectedListener { item ->
             when(item.itemId) {
