@@ -1,13 +1,14 @@
 package com.panjidwisatrio.mangaboytwo
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.panjidwisatrio.mangaboytwo.databinding.ActivitySplashBinding
-import com.panjidwisatrio.mangaboytwo.utils.SPLASH_SCREEN_TAG
 import java.lang.Exception
 
+@SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySplashBinding
@@ -26,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
                     startActivity(Intent(baseContext, MainActivity::class.java))
                     finish()
                 } catch (e : Exception) {
-                    Log.d(SPLASH_SCREEN_TAG, e.message.toString())
+                    Log.d("splash screen", e.message.toString())
                 }
             }
         }.start()

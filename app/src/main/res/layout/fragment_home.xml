@@ -4,100 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomeFragment"
+    tools:context=".ui.home.HomeFragment"
     android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
+    <include
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:elevation="0dp"
-        tools:ignore="NotSibling">
+        android:id="@+id/toolbar_custom_home"
+        layout="@layout/toolbar_custom"/>
 
-        <Toolbar
-            android:id="@+id/toolbar"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:id="@+id/slider_container"
+            android:layout_marginBottom="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="90dp"
+            android:orientation="vertical">
 
-            android:background="@color/white"
-            android:elevation="0dp">
-
-            <LinearLayout
+            <!--AUTO IMAGE SLIDER-->
+            <com.afdhal_fa.imageslider.ImageSlider
+                android:id="@+id/autoSlider"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="200dp"
+                app:iss_auto_cycle="true"
+                app:iss_image_scaleType="fitXY"
+                app:iss_with_background="false"
+                app:iss_with_title="false" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/sf_compact_semibold"
-                    android:textSize="25sp"/>
-
-            </LinearLayout>
-
-        </Toolbar>
-
-        <androidx.core.widget.NestedScrollView
-            android:id="@+id/slider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp">
-
-            <LinearLayout
-                android:id="@+id/slider_container"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginBottom="40dp">
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/popular"
+                android:fontFamily="@font/sf_compact_semibold"/>
 
-                <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/slider_iv"
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_manga_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:text="@string/popular"
-                    android:fontFamily="@font/sf_compact_semibold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="@string/terbaru"
+                android:fontFamily="@font/sf_compact_semibold"/>
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_manga_horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_horizontal_manga"
-                    android:layout_marginTop="20dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_manga_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:text="@string/terbaru"
-                    android:fontFamily="@font/sf_compact_semibold"/>
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_manga_grid"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_horizontal_manga"
-                    android:layout_marginTop="20dp"/>
-
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-
-    </com.google.android.material.appbar.AppBarLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 
 </LinearLayout>

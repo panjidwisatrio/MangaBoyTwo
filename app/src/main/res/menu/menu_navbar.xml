@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/page_home"
+        android:id="@+id/homeFragment"
         android:enabled="true"
         android:icon="@drawable/home_selector"
         android:title="@string/home"/>
     <item
-        android:id="@+id/page_schedule"
+        android:id="@+id/scheduleFragment"
         android:enabled="true"
         android:icon="@drawable/jadwal_selector"
         android:title="@string/jadwal"/>
     <item
-        android:id="@+id/page_genre"
+        android:id="@+id/genreFragment"
         android:enabled="true"
         android:icon="@drawable/genre_selector"
         android:title="@string/genre"/>
     <item
-        android:id="@+id/page_favorite"
+        android:id="@+id/favoriteFragment"
         android:icon="@drawable/favorite_selector"
         android:enabled="true"
         android:title="@string/favorite"/>
     <item
-        android:id="@+id/page_about"
+        android:id="@+id/aboutFragment"
         android:icon="@drawable/about_us_selector"
         android:enabled="true"
         android:title="@string/about_us"/>

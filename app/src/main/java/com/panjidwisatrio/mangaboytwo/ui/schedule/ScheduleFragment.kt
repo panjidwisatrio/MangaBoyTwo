@@ -1,4 +1,4 @@
-package com.panjidwisatrio.mangaboytwo.fragment
+package com.panjidwisatrio.mangaboytwo.ui.schedule
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,15 +9,20 @@ import com.panjidwisatrio.mangaboytwo.databinding.FragmentScheduleBinding
 
 class ScheduleFragment : Fragment() {
 
-    private lateinit var binding: FragmentScheduleBinding
+    private var _binding: FragmentScheduleBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        binding = FragmentScheduleBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentScheduleBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 
 }

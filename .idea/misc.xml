@@ -12,12 +12,15 @@
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/activity_splash.xml" value="0.20380434782608695" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/fragment_about.xml" value="0.20380434782608695" />
+        <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/fragment_favorite.xml" value="0.20380434782608695" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/fragment_home.xml" value="0.176" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/fragment_schedule.xml" value="0.20199275362318841" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/item_grid_manga.xml" value="0.20380434782608695" />
-        <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/item_horizontal_manga.xml" value="0.20380434782608695" />
+        <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/item_horizontal_manga.xml" value="0.4" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/item_row_manga.xml" value="0.20380434782608695" />
+        <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/item_slider_manga.xml" value="0.20380434782608695" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/slider_item.xml" value="0.20380434782608695" />
+        <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/layout/toolbar_custom.xml" value="0.2504528985507246" />
         <entry key="..\:/Tugas/Telkom/Project/MangaBoyTwo/app/src/main/res/menu/menu_navbar.xml" value="0.27447916666666666" />
       </map>
     </option>

@@ -1,22 +1,23 @@
-package com.panjidwisatrio.mangaboytwo.fragment
+package com.panjidwisatrio.mangaboytwo.ui.genre
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.panjidwisatrio.mangaboytwo.databinding.FragmentAboutBinding
+import com.panjidwisatrio.mangaboytwo.databinding.FragmentGenreBinding
 
-class AboutFragment : Fragment() {
+class GenreFragment : Fragment() {
 
-    private lateinit var binding: FragmentAboutBinding
+    private var _binding: FragmentGenreBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        binding = FragmentAboutBinding.inflate(layoutInflater, container, false)
+        _binding = FragmentGenreBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 }
